@@ -10,7 +10,7 @@ const hbs = require('hbs')
 // express is a function
 
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 // To customize server
 // publicDirectoryPath = 'C:\\Users\\Dheeraj Raghavendra\\Desktop\\Node\\web-server\\public' -> working
@@ -106,8 +106,8 @@ app.get('*', (req, res) => {
 })
 
 // To start server (port number, ())  ; Process of starting a server is asynchronous
-app.listen(3000, () => {
-    console.log('Server is up on port 3000')
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`)
 })
 
 console.log(process.cwd())
