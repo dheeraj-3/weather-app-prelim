@@ -1,11 +1,3 @@
-// console.log('123')
-
-// fetch('http://localhost:3000/weather?longitude=79.35&latitude=13.68').then( response => {
-//     response.json().then(data => {
-//         console.log(data)
-//     })
-// })
-
 const formInput = document.querySelector('form')
 
 formInput.addEventListener('submit', e => {
