@@ -10,6 +10,7 @@ const hbs = require('hbs')
 // express is a function
 
 const app = express()
+const port = process.env.PORT
 
 // To customize server
 // publicDirectoryPath = 'C:\\Users\\Dheeraj Raghavendra\\Desktop\\Node\\web-server\\public' -> working

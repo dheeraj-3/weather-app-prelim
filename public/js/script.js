@@ -6,7 +6,7 @@ formInput.addEventListener('submit', e => {
     const latitude = formInput.querySelector('#lat').value
     
     console.log(longitude, latitude)
-    fetch(`http://localhost:3000/weather?longitude=${longitude}&latitude=${latitude}`).then( response => {
+    fetch(`/weather?longitude=${longitude}&latitude=${latitude}`).then( response => {
     response.json().then(data => {
         const temperatureResult = data.temperature
         // console.log(temperature)
